@@ -1,0 +1,162 @@
+/* Fra 0 og op til 750 Pixels bliver defineret med disse MOBILE DEVICE regler*/
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.h1list {
+  text-decoration: none;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.nav__img--color {
+  margin-left: 25px;
+}
+
+ul {
+  display: none;
+  flex-basis: 100%;
+  text-align: center;
+  list-style-type: none;
+  z-index: 0;
+  margin: 0px;
+  padding: 0.2rem 0;
+}
+
+ul li {
+  padding: 1rem 1rem;
+  border-bottom: 1px solid gray;
+}
+
+a {
+  padding: 0px;
+}
+
+li a {
+  text-decoration: none;
+  padding: 2em;
+  color: #dfdfdf;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ ul {
+  display: block;
+}
+
+header h1 {
+  margin: 0px;
+  color: white;
+  padding: 10px;
+}
+
+footer {
+  background-color: #707070;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+footer figure {
+  margin: 0 20px 0 0;
+}
+
+footer p {
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+address {
+  margin-left: 16px;
+}
+
+/* Fra 750 Pixels og Opefter er Defineret med disse DESKTOP regler*/
+@media (min-width: 750px) {
+  .margin-bot_header {
+    margin-bottom: 10em;
+  }
+
+  header {
+    background-color: #92b8b7;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul {
+    display: list-item none;
+    display: flex;
+    background-color: inherit;
+    justify-content: space-evenly;
+    flex-basis: auto;
+  }
+
+  ul li {
+    border: none;
+  }
+
+  li a {
+    padding: 0em;
+  }
+
+  header h1 {
+    /* padding:0 7em 0 5.7em;*/
+  }
+
+  .footerfill {
+    background-color: #707070;
+  }
+
+  footer {
+    margin-top: 3em;
+    width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer_gallery {
+    margin-top: 3em;
+    width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1250px) {
+  .footer_gallery {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    position: unset;
+    bottom: unset;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */

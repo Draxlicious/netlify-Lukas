@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/import.css">
     <title>Lukas portfolio</title>
 </head>
+
 <body>
+
+        <header>
+        
+                <nav>
+                    <h1>Lukas portfolio</h1>
+        
+        
+                    <!--Mobile Device Menu-->
+                    <label for="foldout" id="menu"> <img class ="nav__img--color" src="dist/img/Symbol 1 – 2.png" alt="Menu"> </label>
+                    <input type="checkbox" name="foldout" id="foldout">
+                    <!--Desktop Device Menu-->
+        
+                    <ul>
+        
+                        <li><a href="#"> Mikkel</a></li>
+                        <li><a href="#">Elsker</a></li>
+                        <li><a href="#">Stor</a></li>
+                        <li><a href="#">Kebab</a></li>
+                    </ul>
+                </nav>
+            </header>
+
     
-    <h1>Lukas Portfolio</h1>
     <h3>Cat lover</h3>
     <button id="previous">Previous</button>
     <button id="nextImage">Next</button>
@@ -19,9 +42,10 @@
         <div data-url="dist/img/sødkat2.jpg"></div>
         <div data-url="dist/img/sødkat3.jpg"></div>
     </div>
-            
+
     <img class="imgDisplay" src="">
 
     <script src="dist/js/index.js"></script>
 </body>
+
 </html>
